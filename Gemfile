@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-# Oprava 16.01.16 - SQLite fro development, PG for production
+# JB Oprava 16.01.16 - SQLite fro development, PG for production
 group :development, :test do
   gem 'sqlite3'
 end
@@ -50,5 +50,9 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # Pridaano 18.1.16 po chybe ""the page you were looking for does not exist"
+  # po zobrazeni app na Heroku
+  gem 'rails_12factor', group: :production
+  
 end
 
